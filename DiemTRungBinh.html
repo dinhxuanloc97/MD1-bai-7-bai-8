@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    // let inputvatly = prompt("Nhap diem Vat ly");-->
+<!--    // let inputtoan = prompt("Nhap diem Toan");-->
+<!--    // let inputhoa = prompt("Nhap diem Hoa");-->
+<!--    // let vatLy = parseInt(inputvatly);-->
+<!--    // let toan = parseInt(inputtoan);-->
+<!--    // let hoa = parseInt(inputhoa);-->
+<!--    // let average = (vatLy+toan+hoa)/3;-->
+<!--    // // alert(average)-->
+<!--    // document.write("Diem trung binh cua ban la:", + average)-->
+<!--</script>-->
+<input placeholder="nhap mon li" type="text" id="1">
+<input  placeholder="nhap mon toan" type="text"id="2">
+<input placeholder="nhap mon sinh" type="text"id="3">
+<h1 id="dtb"></h1>
+<button one click="loc" >click</button>
+<script>
+    function loc() {
+        let diemLy=+document.getElementById('1').value;
+        console.log("diemly-->",diemLy)
+        let diemToan=+document.getElementById('2').value;
+        console.log("diemToan-->",diemToan)
+        let diemSinh=+document.getElementById('3').value;
+        console.log("diemSinh-->",diemSinh)
+        let diemTrungbinh=(diemLy+diemToan+diemSinh)/3
+        document.getElementById("dtb").innerHTML="diem trung binh ba mon:"+diemTrungbinh
+        let tongDiem=diemly+diemSinh+diemToan
+        document.getElementById("td").innerHTML="t diem ba mon :"+ tongDiem
+
+    }
+</script>
+
+</body>
+</html>
